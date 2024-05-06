@@ -1,0 +1,44 @@
+---
+sidebar_position: 1
+title: MDX and React
+---
+
+## Fetching
+
+import FetchButton from "../../src/components/FetchButton";
+
+```jsx
+fetch("https://jsonplaceholder.typicode.com/todos/1")
+  .then((response) => response.json())
+  .then((json) => console.log(json));
+```
+
+```jsx title="Response"
+{
+  "userId": 1,
+  "id": 1,
+  "title": "delectus aut autem",
+  "completed": false
+}
+```
+
+## Inline React
+
+export const Highlight = ({ children, color }) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: "2px",
+      color: "#fff",
+      padding: "0.2rem",
+    }}
+  >
+    {children}
+  </span>
+);
+
+<Highlight color="#25c2a0">Docusaurus green</Highlight> and <Highlight color="#1877F2">
+  Facebook blue
+</Highlight> are my favorite colors.
+
+I can write **Markdown** alongside my _JSX_!
