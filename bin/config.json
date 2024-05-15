@@ -1,4 +1,4 @@
 {
-  "DIRECTORY_PATH": "/var/www/httpd/example.com",
-  "APP_NAME": "example.com"
+  "DIRECTORY_PATH": "/var/www/html/taxpal-documentation",
+  "APP_NAME": "taxpal-documentation"
 }
